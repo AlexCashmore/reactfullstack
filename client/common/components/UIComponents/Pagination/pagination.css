@@ -1,0 +1,19 @@
+.pagination {
+
+}
+
+.pagination .btn-custom.btn-select-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-color: transparent;
+}
+
+.pagination .btn-custom.btn-select-page {
+    border-radius: 0;
+}
+
+.pagination .btn-custom.btn-select-right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color:transparent;
+}

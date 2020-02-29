@@ -1,0 +1,43 @@
+.panel.panel-container .panel-header-container {
+    padding: 16px 20px;
+}
+
+.panel.panel-container .panel-header-container.panel-header-left {
+    text-align: left;
+}
+
+.panel.panel-container .panel-header-container.panel-header-center {
+    text-align: center;
+}
+
+.panel.panel-container .panel-header-container.panel-header-right {
+    text-align: right;
+}
+
+.panel.panel-container .panel-content-container {
+    padding: 20px;
+    height: 100%;
+    min-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.panel.panel-container .panel-content-container .spinner {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+
+.panel.panel-container .panel-content-container .vertical-aligned-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 20px;
+}
+
+@media (max-width: 480px){
+    .panel.panel-container .panel-header-container {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,15 @@
+.data-table {
+    overflow: hidden;
+    /*border: solid 1px #DFE3E8;*/
+    /*border-radius: 3px;*/
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+}
+
+.data-table .data-table-headings + .data-table-content {
+    border-top: solid 1px #DFE3E8;
+}
+
+.data-table .data-table-content + .data-table-pagination {
+    border-top: solid 1px #DFE3E8;
+}

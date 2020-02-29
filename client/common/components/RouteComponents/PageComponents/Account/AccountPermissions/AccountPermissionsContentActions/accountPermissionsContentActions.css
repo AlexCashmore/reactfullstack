@@ -1,0 +1,26 @@
+.account-permissions-content-actions .search-action-holder {
+    min-width: 260px;
+}
+
+.account-permissions-content-actions .filter-action-holder {
+    min-width: 220px;
+}
+
+@media (min-width: 1024px) {
+    .account-permissions-content-actions .search-action-holder {
+        max-width: 320px;
+    }
+
+    .account-permissions-content-actions .filter-action-holder {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .account-permissions-content-actions .grid > .grid-cell > .grid.grid-right {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}

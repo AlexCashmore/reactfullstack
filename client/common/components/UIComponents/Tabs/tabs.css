@@ -1,0 +1,15 @@
+.tabs {
+
+}
+
+.tabs .tabs-navigation .tab-button.active {
+    color: red;
+}
+
+.tabs .tabs-content .tab-container {
+    display: none;
+}
+
+.tabs .tabs-content .tab-container.active {
+    display: block;
+}

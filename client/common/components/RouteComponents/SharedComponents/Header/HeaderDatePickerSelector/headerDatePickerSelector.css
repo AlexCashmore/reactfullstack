@@ -1,0 +1,24 @@
+.header-date-picker-selector {
+    background-color: #FFF;
+    transition: background-color 0.25s ease-in-out;
+    min-height: 60px;
+}
+
+.header-date-picker-selector > .grid {
+    padding: 8px 12px;
+    height: 60px;
+}
+
+.header-date-picker-selector .input-control-container .bp3-popover-wrapper {
+    width: 100%;
+    display: block;
+}
+
+.header-date-picker-selector .input-control-container .bp3-popover-wrapper .bp3-popover-target {
+    width: 100%;
+    display: block;
+}
+
+.header-date-picker-selector .bp3-input {
+    text-align: center;
+}

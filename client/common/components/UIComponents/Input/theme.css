@@ -1,0 +1,289 @@
+.input-control,
+.input-select-control .input-select-current {
+    font-size: 14px !important;
+    line-height: 16px;
+    padding: 6px 10px;
+    transition: border-color 0.25s ease-in-out;
+    height: 30px;
+}
+
+.input-control {
+    color: #212B36;
+    border: none;
+    box-shadow: inset 0 0 0 1px rgba(67, 90, 111, 0.3), inset 0 1px 2px rgba(67, 90, 111, 0.14);
+}
+
+.input-control-container.with-addons .input-control-addon:not(.input-control-inner-addon) .fa,
+.input-control-container.with-addons .input-addon-tooltip .fa {
+    display: block;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 10px;
+    max-width: 30px;
+}
+
+.input-control-container.with-addons .input-control-addon:not(.input-control-inner-addon) {
+    color: #454F5B;
+    border: 1px solid #DFE3E8;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+    transition: all 0.25s ease-in-out;
+}
+
+.input-control-container.with-addons .input-control-addon:first-child {
+    border-right: none;
+}
+
+.input-control-container.with-addons .input-control-addon:last-child {
+    border-left: none;
+}
+
+.input-control.input-select-control {
+    padding: 0;
+}
+
+.input-control-container > label {
+    color: #212B36;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    margin-bottom: 10px;
+}
+
+.input-control-container.with-tooltip .tooltip {
+    height: 1em;
+}
+
+.input-control-container.with-tooltip .tooltip .fa {
+    padding: 0 4px;
+}
+
+.input-control-container.with-addons .input-control-addon.input-addon-tooltip > .tooltip-content {
+    font-size: 14px;
+    color: #212B36;
+    padding: 10px 15px;
+    border: 1px solid #DFE3E8;
+    box-shadow: 0 2px 6px 0 #DFE3E8;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+    min-width: 320px;
+    line-height: 20px;
+    margin-top: 0.5em;
+}
+
+/* Border radius */
+
+.input-control-container.with-border-radius .input-control {
+    border-radius: 3px;
+}
+
+.input-control-container.with-addons.with-border-radius .input-control {
+    border-radius: 0;
+}
+
+.input-control-container.with-addons.with-border-radius .input-control-addon:first-child,
+.input-control-container.with-addons.with-border-radius .input-control:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.input-control-container.with-addons.with-border-radius .input-control-addon:last-child,
+.input-control-container.with-addons.with-border-radius .input-control:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.input-control-container.with-addons.with-border-radius .input-control-addon.input-addon-tooltip > .tooltip-content,
+.input-control-container.with-addons .input-control-addon.with-border-radius.input-addon-tooltip > .tooltip-content {
+    border-radius: 3px;
+}
+
+/* No borders between addons */
+
+.input-control-container.with-addons.no-border-between-addons .input-control {
+    border-left: none;
+    border-right: none;
+}
+
+.input-control-container.with-addons.no-border-between-addons .input-control-addon:first-child .fa {
+    padding-right: 0;
+}
+
+.input-control-container.with-addons.no-border-between-addons .input-control:first-child {
+    border-left: solid 1px #DFE3E8;
+}
+
+.input-control-container.with-addons.no-border-between-addons .input-control:last-child {
+    border-right: solid 1px #DFE3E8;
+}
+
+/* Input and Addons - events */
+
+.input-control-container:hover .input-control,
+.input-control-container.with-addons:hover .input-control-addon:not(.input-control-inner-addon) {
+    border-color: #c4c8cd;
+}
+
+.input-control-container.with-addons.no-border-between-addons:hover .input-control:last-child {
+    border-right: solid 1px #c4c8cd;
+}
+
+.input-control-container:hover .input-control {
+    border-color: #c4c8cd;
+}
+
+.input-control-container:hover .input-select-control {
+    border-color: #c4c8cd;
+}
+
+.input-control-container .input-control:focus {
+    z-index: 2;
+    outline: none;
+    box-shadow: inset 0 0 2px rgba(67, 90, 111, 0.14), inset 0 0 0 1px #579ad9, 0 0 0 3px rgba(16, 112, 202, 0.14);
+}
+
+/* Input and Addons - focus */
+
+.input-control-container.focus-active .input-control,
+.input-control-container.with-addons.focus-active .input-control-addon:not(.input-control-inner-addon) {
+    border-color: #c4c8cd;
+}
+
+.input-control-container.with-addons.no-border-between-addons.focus-active .input-control:last-child {
+    border-right: solid 1px #c4c8cd;
+}
+
+.input-control-container.focus-active .input-control {
+    border-color: #c4c8cd;
+}
+
+.input-control-container.focus-active .input-select-control {
+    border-color: #c4c8cd;
+}
+
+/* Select */
+
+.input-select-control .input-select-addon {
+    width: 8px;
+    height: 16px;
+
+    right: 12px;
+    top: 50%;
+    margin-top: -8px;
+
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    transition: all 0.2s ease-in-out;
+
+    display: block;
+    pointer-events: none;
+    position: absolute;
+}
+
+.input-select-control .input-select-addon:after {
+    display: none;
+}
+
+.input-select-control .input-select-addon .icon {
+    display: block;
+    width: 8px;
+    height: 8px;
+    font-size: 14px;
+    vertical-align: baseline;
+    line-height: 8px;
+    color: #D8D8D8;
+    transition: color 0.25s ease-in-out;
+}
+
+.input-select-control.open .input-select-addon .icon,
+.input-select-control:hover .input-select-addon .icon {
+    color: #3C4144;
+}
+
+.input-select-control.open .input-select-addon {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.input-select-control .input-select-list {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.input-select-control .input-select-list li:not(:hover) {
+    background-color: transparent;
+}
+
+.input-select-control .input-select-list li {
+    padding: 12px 10px;
+}
+
+.input-select-control .input-select-list li:hover,
+.input-select-control .input-select-list li:focus,
+.input-select-control .input-select-list li.selected {
+    background-color: #f6f6f6;
+}
+
+.input-select-control .input-select-list li.selected {
+    font-weight: 700;
+}
+
+/* Blueprint 3 overwrites */
+
+:focus {
+    outline: 0;
+    outline-offset: 0;
+    -moz-outline-radius: 0;
+}
+
+.bp3-portal {
+    z-index: 999;
+}
+.bp3-popover .bp3-popover-content{
+    max-height: 360px;
+    overflow-y:auto;
+}
+
+.input-control-container .bp3-popover-wrapper,
+.input-control-container .bp3-popover-wrapper .bp3-popover-target,
+.input-control-container .bp3-popover-wrapper .bp3-button {
+    width: 100%;
+}
+
+.input-control-container .bp3-input-group {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    outline: 0;
+    min-width: 0;
+    -webkit-appearance: none;
+}
+
+.input-control-container .bp3-input:focus, .input-control-container .bp3-input.bp3-active {
+    -webkit-box-shadow: inset 0 0 2px rgba(67, 90, 111, 0.14), inset 0 0 0 1px #579ad9, 0 0 0 3px rgba(16, 112, 202, 0.14);
+    box-shadow: inset 0 0 2px rgba(67, 90, 111, 0.14), inset 0 0 0 1px #579ad9, 0 0 0 3px rgba(16, 112, 202, 0.14);
+}
+
+/* Blueprint 3 - Border radius */
+
+.input-control-container.with-border-radius .bp3-input {
+    border-radius: 3px;
+}
+
+.input-control-container.with-addons.with-border-radius .bp3-input {
+    border-radius: 0;
+}
+
+.input-control-container.with-addons.with-border-radius .input-control:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.input-control-container.with-addons.with-border-radius .input-control:last-child {
+    border-radius: 0 3px 3px 0;
+}

@@ -1,0 +1,8 @@
+.logo {
+    display: table;
+    margin: 0 auto;
+}
+
+.logo img {
+    display: table-cell;
+}

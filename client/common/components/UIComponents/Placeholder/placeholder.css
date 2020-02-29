@@ -1,0 +1,114 @@
+.placeholder .default-loader {
+    height: 100px;
+    -webkit-animation: shimmer 1s linear infinite forwards;
+    animation: shimmer 1s linear infinite forwards;
+    background: #f6f7f9;
+    background-image: -webkit-linear-gradient(left, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%);
+    background-image: linear-gradient(to right, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.placeholder .post-loader {
+    position: relative;
+    height: 104px;
+    -webkit-animation: shimmer 1s linear infinite forwards;
+    animation: shimmer 1s linear infinite forwards;
+    background: #f6f7f9;
+    background-image: -webkit-linear-gradient(left, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%);
+    background-image: linear-gradient(to right, #f6f7f9 0%, #e9ebee 20%, #f6f7f9 40%, #f6f7f9 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 104px;
+}
+
+.placeholder .post-loader div {
+    background: #fff;
+    height: 6px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.placeholder .post-loader div:nth-child(1) {
+    height: 40px;
+    left: 40px;
+    right: auto;
+    top: 0;
+    width: 8px;
+}
+
+.placeholder .post-loader div:nth-child(2) {
+    height: 8px;
+    left: 48px;
+    top: 0;
+}
+
+.placeholder .post-loader div:nth-child(3) {
+    left: 136px;
+    top: 8px;
+}
+
+.placeholder .post-loader div:nth-child(4) {
+    height: 12px;
+    left: 48px;
+    top: 14px;
+}
+
+.placeholder .post-loader div:nth-child(5) {
+    left: 100px;
+    top: 26px;
+}
+
+.placeholder .post-loader div:nth-child(6) {
+    height: 10px;
+    left: 48px;
+    top: 32px;
+}
+
+.placeholder .post-loader div:nth-child(7) {
+    height: 20px;
+    top: 40px;
+}
+
+.placeholder .post-loader div:nth-child(8) {
+    left: 410px;
+    top: 60px;
+}
+
+.placeholder .post-loader div:nth-child(9) {
+    height: 13px;
+    top: 66px;
+}
+
+.placeholder .post-loader div:nth-child(10) {
+    left: 440px;
+    top: 79px;
+}
+
+.placeholder .post-loader div:nth-child(11) {
+    height: 13px;
+    top: 85px;
+}
+
+.placeholder .post-loader div:nth-child(12) {
+    left: 178px;
+    top: 98px;
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}

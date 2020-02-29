@@ -1,0 +1,21 @@
+.authorizing {
+    position: relative;
+    z-index: 98;
+    height: 100%;
+}
+
+.authorizing .content {
+    position: relative;
+    z-index: 99;
+}
+
+.authorizing .authorizing-inputs-holder {
+    height: 100%;
+    position: relative;
+}
+
+.authorizing .authorizing-inputs {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}

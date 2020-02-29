@@ -1,0 +1,38 @@
+.login {
+    position: relative;
+    z-index: 98;
+    height: 100%;
+}
+
+.login.content {
+    position: relative;
+    z-index: 99;
+    padding: 36px; /* Page Padding */
+}
+
+.login .login-inputs-holder {
+    height: 100%;
+    position: relative;
+}
+
+.login .login-inputs {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login .login-inputs .input-label-holder {
+    max-width: 200px;
+}
+
+.login .login-inputs .input-control-container.with-addons .input-control-addon.tooltip > .content {
+    min-width: 100%;
+}
+
+.login .login-inputs .btn.btn-login {
+    display: table;
+    margin: 0 auto;
+    width:100%;
+    padding-left: 35px;
+    padding-right: 35px;
+}

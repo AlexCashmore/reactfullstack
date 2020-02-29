@@ -1,0 +1,41 @@
+.link {
+    color: #3C4144;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:visited, .link:active {
+    color: #3C4144;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+/****************
+/* White
+****************/
+
+.link.link-white {
+    color: #ffffff;
+}
+
+.link.link-white:visited, .link.link-white:active {
+    color: #ffffff;
+}
+
+/****************
+/* Blue
+****************/
+
+.link.link-blue {
+    color: #007ACE;
+}
+
+.link.link-blue:hover,
+.link.link-blue-hover:hover {
+    color: #007ACE;
+}
+
+.link.link-blue:focus {
+    color: #0065b9;
+}

@@ -1,0 +1,26 @@
+.account-network {
+    height: 100%;
+    min-height: 500px; /* min chart size */
+}
+
+.account-network .network-manager {
+    height: 100%;
+    overflow: hidden;
+}
+
+.account-network .network-manager svg {
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    cursor: default;
+}
+
+.account-network .network-manager svg rect,
+.account-network .network-manager svg text {
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

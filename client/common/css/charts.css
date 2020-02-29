@@ -1,0 +1,9 @@
+.chart {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.chart canvas {
+    width: 100% !important;
+}

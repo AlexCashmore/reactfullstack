@@ -1,0 +1,123 @@
+/*
+    - To add an addon to the input the .input-control-container must contain the class "with-addons".
+    - To add an input with border-radius design the .input-control-container must contain the class "with-border-radius".
+
+    * In order to change the borders, padding, font-size you only need to modify this file.
+ */
+.input-control-container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.input-control {
+    display: block;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    outline: 0;
+    min-width: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.input-control-container.with-addons .input-control-addon.input-addon-tooltip > .tooltip-content {
+    position: absolute;
+    display: none;
+    min-width: 320px;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    cursor: initial;
+}
+
+.input-control-container.with-addons .fa {
+    cursor: default;
+    text-align: center;
+}
+
+.input-control-container.with-addons .input-addon-tooltip .fa {
+    cursor: pointer;
+}
+
+.input-control-container.with-addons .input-control-addon.input-addon-tooltip.tooltip-left > .tooltip-content {
+    left: 0;
+    right: initial;
+}
+
+.input-control-container.with-addons .input-control-addon.input-addon-tooltip.tooltip-right > .tooltip-content {
+    right: 0;
+    left: initial;
+}
+
+.input-control-container.with-addons .input-control-addon.input-addon-tooltip.open > .tooltip-content {
+    display: block;
+}
+
+.input-control-container.with-addons .input-control-addon.input-addon-tooltip:hover {
+    cursor: pointer;
+}
+
+/* Select */
+
+.input-select-control {
+    cursor: pointer;
+}
+
+.input-select-control .input-html-select {
+    display: none;
+}
+
+.input-select-control .input-select-current {
+    display: block;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    outline: 0;
+    min-width: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.input-select-control .input-select-current > span {
+    vertical-align: baseline;
+}
+
+.input-select-control .input-select-addon:after {
+    content: '';
+    display: block;
+    pointer-events: none;
+    position: absolute;
+}
+
+.input-select-control .input-select-list {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    max-height: 200px;
+    opacity: 0;
+    overflow: auto;
+    pointer-events: none;
+}
+
+.input-select-control.open .input-select-list {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.input-select-control .input-select-list li {
+    box-sizing: border-box;
+}

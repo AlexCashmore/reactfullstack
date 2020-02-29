@@ -1,0 +1,43 @@
+.account-settings.content {
+    padding: 36px;
+}
+
+@media (min-width: 576px) {
+    .account-settings .grid-cell.left-section-holder,
+    .account-settings .grid-cell.right-section-holder {
+        min-width: 340px;
+        max-width: 340px;
+    }
+}
+
+.account-settings .left-container .content-section,
+.account-settings .right-container .content-section {
+    background-color: #FFF;
+    padding: 20px;
+    /*border: solid 1px #DFE3E8;*/
+    /*border-radius: 3px;*/
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.account-settings .middle-container .content-section {
+    background-color: #FFF;
+    padding: 20px;
+    /*border: solid 1px #DFE3E8;*/
+    /*border-radius: 3px;*/
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+.account-settings .middle-container .content-actions{
+    padding: 10px 0;
+}
+
+.account-settings .left-container .content-section.full-size-default,
+.account-settings .right-container .content-section.full-size-default,
+.account-settings .middle-container .content-section.full-size-default {
+    padding: 0;
+    background-color: transparent;
+    border-radius: inherit;
+    box-shadow: none;
+}

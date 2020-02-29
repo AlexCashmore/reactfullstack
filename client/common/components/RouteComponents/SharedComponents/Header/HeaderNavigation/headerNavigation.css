@@ -1,0 +1,64 @@
+.header-navigation {
+    background-color: #242536;
+}
+
+.header-navigation ul > li > a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFF;
+    background-color: #242536;
+    padding: 20px 32px;
+    border-top: solid 2px transparent;
+    display: block;
+    text-transform: capitalize;
+    transition: background-color 0.25s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.header-navigation ul > li.selected a {
+    background-color: #000000;
+    border-color: #FE7A1E;
+    color: #FFF;
+}
+
+.header-navigation ul > li a:hover {
+    background-color: #2e2f41;
+    color: #FFF;
+}
+
+.header-navigation ul > li.selected a:hover {
+    background-color: #191919;
+}
+
+.header-navigation ul > li > a .icon {
+    padding-right: 10px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 14px;
+    vertical-align: top;
+    position: relative;
+    top: -2px;
+}
+
+@media (max-width: 959px) {
+    .header-navigation > .grid > .grid-cell {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-navigation > .grid > .grid-cell {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+
+    .header-navigation ul > li > a {
+        padding: 10px 20px;
+    }
+}

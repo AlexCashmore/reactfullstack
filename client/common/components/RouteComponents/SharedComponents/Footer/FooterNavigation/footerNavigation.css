@@ -1,0 +1,3 @@
+.footer-navigation {
+    margin-top: -1em; /* due grid-gutters on parent grid */
+}

@@ -1,0 +1,51 @@
+.data-table-content {
+    background-color: #FFF;
+}
+
+.data-table-content .data-table-row {
+    margin: 0 -1px -1px 0;
+}
+
+.data-table-content .data-table-row .data-table-cell {
+    border-bottom: solid 1px #DFE3E8;
+}
+
+.data-table-content .data-item-row {
+    margin: 0 -1px -1px 0;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.data-table-content .data-item-row .data-item-cell {
+    background-color: #FFF;
+    border-right: solid 1px #DFE3E8;
+    border-bottom: solid 1px #DFE3E8;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+}
+
+.data-table-content .data-table-cell:nth-child(2n+2) .data-item-row .data-item-cell {
+    background-color: #F9FAFB;
+}
+
+.data-table-content .data-table-cell .data-item-row:hover .data-item-cell {
+    background-color: #f5f5f5;
+}
+
+.data-table-content .data-item-cell .grid.data-item-cell-content-holder {
+    height: 100%;
+}
+
+.data-table-content .data-item-cell-content {
+    padding: 20px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #212B36;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    word-break: break-all;
+}

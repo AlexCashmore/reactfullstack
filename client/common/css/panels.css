@@ -1,0 +1,25 @@
+.panel {
+    min-height: 100px;
+    border: solid 1px #DFE3E8;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px 0 #DFE3E8;
+}
+
+.panel .panel-header-container {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3C4144;
+    background-color: #FFFFFF;
+    padding: 16px 20px;
+    border-bottom: solid 1px #DFE3E8;
+}
+
+.panel .panel-content-container {
+    padding: 15px;
+    color: #212B36;
+    background-color: #FFFFFF;
+}
+
+.panel .panel-content-container .input-control-container > label {
+    color: #212B36;
+}
