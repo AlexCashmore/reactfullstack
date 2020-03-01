@@ -6,12 +6,12 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import moment from "moment";
 import { DateTime } from "luxon";
+import LineGraph from "../LineGraph";
 
 import * as pageActions from "../../../../actions/pageActions";
 import * as organizationActions from "../../../../actions/organizationActions";
 
 class Dashboard extends Component {
-
     componentWillMount() {
         this.setState({
             inputSearchValue: "",
@@ -29,7 +29,7 @@ class Dashboard extends Component {
             .toISO();
         const end = DateTime.utc().setZone(this.renderTimezoneOffset(this.props.timezoneOffset)).endOf("day").toUTC()
             .toISO();
-//fetch something for dashboard
+        // fetch something for dashboard
     }
 
     renderTimezoneOffset(offset) {
@@ -44,14 +44,11 @@ class Dashboard extends Component {
         return `UTC${parsedTimezone}`;
     }
 
-
     render() {
         return (
             <section className="dashboard content container">
                 <div className="wrapper">
-                    <div className="container">
-                            Barebones
-                    </div>
+                    <LineGraph />
                 </div>
             </section>
         );
@@ -82,7 +79,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-    const actions = Object.assign({}, pageActions, organizationActions, routeActions, analyticsActions);
+    const actions = Object.assign({}, pageActions, organizationActions);
     return bindActionCreators(actions, dispatch);
 }
 

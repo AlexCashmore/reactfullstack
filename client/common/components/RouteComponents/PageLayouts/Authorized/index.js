@@ -25,7 +25,7 @@ class Authorized extends PureComponent {
                             )
                             : (
                                 <section className="authorized">
-                                    {settings.selectedOrganizationId ? innerContainer : <Spinner label="Loading application..." />}
+                                    {innerContainer}
                                 </section>
                             )
                     }

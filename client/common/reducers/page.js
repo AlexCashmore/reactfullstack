@@ -68,13 +68,8 @@ export default function page(state = initialState, action) {
             typeCompliance: "Week",
             levelType: "Facility",
             page: Object.assign({}, {
-                title: action.payload.data.title,
+                title: 'React App',
                 siteName: action.payload.data.siteName,
-                description: action.payload.data.description,
-                keywords: action.payload.data.keywords,
-                author: action.payload.data.author,
-                canonical: action.payload.data.canonical,
-                publisher: action.payload.data.publisher,
             }),
         });
     case "CHANGE_TITLE":

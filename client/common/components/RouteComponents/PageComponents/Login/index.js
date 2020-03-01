@@ -17,6 +17,7 @@ import InputAddon from "../../../UIComponents/Input/InputAddon";
 
 import * as pageActions from "../../../../actions/pageActions";
 import * as userActions from "../../../../actions/userActions";
+import LineGraph from "../LineGraph";
 
 class Login extends Component {
     componentWillMount() {
@@ -126,12 +127,12 @@ class Login extends Component {
             ? accountIsFetching ? <Authorizing fetching={accountIsFetching} />
                 : (
                     <section className="login content container">
-                        <div className="grid grid-full grid-center login-inputs-holder">
+                        {/*<div className="grid grid-full grid-center login-inputs-holder">
                             <div className="grid-cell grid-cell-autoSize">
                                 <div className="login-inputs">
 
                                     <div className="panel">
-                                        <div className="panel-header-container">Customer sign in</div>
+                                        <div className="panel-header-container">Please sign in to continue</div>
                                         <div className="panel-content-container">
                                             <Form onSubmit={this.handleFormSubmit}>
                                                 <div className="grid grid-gutters grid-full">
@@ -268,7 +269,12 @@ class Login extends Component {
 
                                 </div>
                             </div>
-                        </div>
+                        </div>*/}
+                        <section className="dashboard content container">
+                            <div className="wrapper">
+                                <LineGraph />
+                            </div>
+                        </section>
                     </section>
                 ) : null;
     }
